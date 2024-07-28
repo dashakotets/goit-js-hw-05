@@ -1,4 +1,4 @@
-const sortByDescendingFriendCount = users => users.toSorted((current, next) => next.friends.localeCompare(current.friends));
+const sortByDescendingFriendCount = users => users.toSorted((current, next) =>  next.friends.length - current.friends.length);
 
 console.log(
   sortByDescendingFriendCount([
